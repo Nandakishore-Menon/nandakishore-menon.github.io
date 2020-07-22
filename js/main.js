@@ -27,3 +27,11 @@ const slide=()=>{
 };
 
 slide();
+
+// var welcome=()=>{
+// 	const bio=document.querySelector('.bio');
+// 	bio.style.animation=`navlinksFade 0.5s ease forwards 3s`;
+// }
+
+
+// welcome();
