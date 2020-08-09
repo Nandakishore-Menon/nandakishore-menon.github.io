@@ -54,7 +54,7 @@
      </ul>
 
     <div class="panelContainer">
-        <div id="panel1" class="panel">
+        <div id="panel1" class="panel text-center">
 
 
             <h1 class="title ">About Me</h1>
@@ -72,16 +72,34 @@
 
         <div id="panel2" class="panel">
 
-            <h1 class="title ">About Me</h1>
-            <hr class="title-bar">
-            <hr class="title-bar">
-            <ul id="interests">
-                <li>I am passionate about problem solving in general, be it a development challenge or competitive programming questions.</li><hr>
-                <li>I enjoy CTFs and Hackathons.</li><hr>
-                <li>I look forward to contributing to Open Source projects.</li><hr>
-            </ul>
-            <div id="proj"></div>
-            <h1 class="status title">I am seeking internship opportunities.</h1>  
+            <div class="tech_group">
+                    <h1 class="title text-center">Skills</h1>
+                    <hr class="title-bar">
+                    <hr class="title-bar">
+                    <div class="tech text-center">
+                        <h4 class="title">Languages</h4>
+                        <i class="devicon-c-plain-wordmark techic"></i>
+                        <i class="devicon-python-plain techic"></i>
+                        <i class="devicon-java-plain techic"></i>
+                    </div>
+                    <div class="tech text-center">
+                        <h4 class="title text-center">Web</h4>
+                        <i class="devicon-html5-plain techic"></i>
+                        <i class="devicon-css3-plain techic"></i>
+                        <i class="devicon-javascript-plain techic"></i>
+                        <i class="devicon-nodejs-plain techic"></i>
+                        <i class="devicon-express-original techic"></i>
+                        <i class="devicon-react-original techic"></i>
+                    </div>
+                    <div class="tech text-center">
+                        <h4 class="title">Database</h1>
+                        <i class="devicon-mongodb-plain techic"></i>
+                    </div>
+                    <div class="tech text-center">
+                        <h4 class="title">Version Control</h1>
+                        <i class="devicon-git-plain techic"></i>
+                    </div>
+            </div>  
         </div> <!-- end panel 2 -->
 
         </div> <!-- end div class="panelContainer" or panel wrapper -->
@@ -90,33 +108,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-        
-<!--         <div id="about" class="about text-center">
-            <h1 class="title ">About Me</h1>
-            <hr class="title-bar">
-            <hr class="title-bar">
-            <ul id="interests">
-                <li>I am passionate about problem solving in general, be it a development challenge or competitive programming questions.</li><hr>
-                <li>I enjoy CTFs and Hackathons.</li><hr>
-                <li>I look forward to contributing to Open Source projects.</li><hr>
-            </ul>
-            <div id="proj"></div>
-            <h1 class="status title">I am seeking internship opportunities.</h1>
-
-        </div> -->
-        
 
 <!-- --------------Project Carousel------------------------------------->
 
@@ -199,37 +190,37 @@
 
 
 <!-- --------------Contact Me------------------------------------->
-    <div class='contact text-center'>
-        <h2>Send me your message,here </h2><br><br>
-        <div id="cont_info" class="text-center">
-            <div class="tech social text-center">
-                <a class="soc_ic" href="https://www.linkedin.com/in/nandakishore-menon-b4a021196/" target="_blank"><i class="devicon-linkedin-plain techic soc"></i></a>
-                <a class="soc_ic" href="https://github.com/Nandakishore-Menon" target="_blank"><i class="devicon-github-plain techic soc"></i></a>
-                <a class="soc_ic" href="https://www.facebook.com/profile.php?id=100008917634344" target="_blank"><i class="devicon-facebook-plain techic soc"></i></a>
-                <a class="soc_ic" href="https://twitter.com/Nandakishore_SM"  target="_blank"><i class="devicon-twitter-plain techic soc"></i></a>
+        <div class='contact text-center'>
+            <h2>Send Me Your Message Here :</h2><br><br>
+            <div id="cont_info" class="text-center">
+                <div class="social text-center">
+                    <a class="soc_ic" href="https://www.linkedin.com/in/nandakishore-menon-b4a021196/" target="_blank"><i class="devicon-linkedin-plain soc"></i></a>
+                    <a class="soc_ic" href="https://github.com/Nandakishore-Menon" target="_blank"><i class="devicon-github-plain soc"></i></a>
+                    <a class="soc_ic" href="https://www.facebook.com/profile.php?id=100008917634344" target="_blank"><i class="devicon-facebook-plain soc"></i></a>
+                    <a class="soc_ic" href="https://twitter.com/Nandakishore_SM"  target="_blank"><i class="devicon-twitter-plain soc"></i></a>
+                </div>
+
+                <span><br>OR mail me at<br></span>
+                <h3 id="mail">Nandakishore.Menon@iiitb.org</h3>
             </div>
 
-            <span><br>OR mail me at<br></span>
-            <h3 id="mail">Nandakishore.Menon@iiitb.org</h3>
+
+            <div id="form_div" class="text-center">
+                <form id="cont_form" target="_blank"action="https://formspree.io/xpzyorad" method="POST">
+                    <label>
+                        Your email:<br><input type="email" name="_replyto">
+                    </label>
+                    <label>
+                        Your message:<br><textarea name="message"></textarea>
+                    </label>
+
+                      <!-- your other form fields go here -->
+                    <br>
+                    <button id="sub" type="submit">Send</button>
+                </form>
+            </div>
+
         </div>
-
-
-        <div id="form_div" class="text-center">
-            <form id="cont_form" target="_blank"action="https://formspree.io/xpzyorad" method="POST">
-                <label>
-                    Your email:<br><input type="email" name="_replyto">
-                </label>
-                <label>
-                    Your message:<br><textarea name="message"></textarea>
-                </label>
-
-                  <!-- your other form fields go here -->
-                <br>
-                <button id="sub" type="submit">Send</button>
-            </form>
-        </div>
-
-    </div>
 
 
 
