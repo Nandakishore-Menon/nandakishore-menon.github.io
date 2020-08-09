@@ -28,10 +28,6 @@ const slide=()=>{
 
 slide();
 
-// var welcome=()=>{
-// 	const bio=document.querySelector('.bio');
-// 	bio.style.animation=`navlinksFade 0.5s ease forwards 3s`;
-// }
-
-
-// welcome();
+$('.carousel').on('slid.bs.carousel', function () {
+    $('.projinfo').html($('.active > .carousel-caption').html());
+});
