@@ -1,10 +1,13 @@
 *{
 	margin:0px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 }
 
-
+body{
+	background-color: #F0F6F7FF;#343148FF: ;
+	color: #343148FF;
+}
 nav{
 	display: flex;
 	position: fixed;
@@ -13,16 +16,17 @@ nav{
 	justify-content: space-around;
 	align-items: center;
 	min-height: 15vh;
-	background: #f0ebf4;
+	background:#F0F6F7FF;
 	font-family: 'Poppins', sans-serif;
 	box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 button{
+	color:#F0F6F7FF;
 	height: 40px;
 	width: 140px;
 	border-radius: 20px; 
-	background-color:#ffa48e;
+	background-color:#9F6B99FF;
 	padding: 2px 0px 8px 0px;
 	font-size: 23px;
 }
@@ -41,7 +45,7 @@ button{
 }
 .navlinks a:hover{
 	text-decoration: none;
-	color: #ffa48e;
+	color: #9F6B99FF;
 }
 
 .navlinks li{
@@ -51,26 +55,33 @@ button{
 }
 
 h1.title{
-	background: -webkit-linear-gradient(-180deg,#026670,#9fedd7);
-	-webkit-background-clip:text;
-	-webkit-text-fill-color:transparent;
+	color: #343148FF;
 	/*text-transform: uppercase;*/
-	margin: 5vh;
+	margin: 5vh 0px 0px 0px;
 	display: flex;
 	justify-content: center;
 	font-size: 50px;
 }
 
-h2{
-	margin-top: 6%;
+#t_logo :hover{
+	text-decoration: none;
 }
-
-.logo{
+#t_logo{
+	text-decoration: none;
 	color: #2C2B30;
 	text-transform: uppercase;
 	letter-spacing: 3.5px;
 	font-size: 20px;
 	text-shadow: 1px 1px 1px #000000;
+
+}
+
+h2{
+	margin-top: 6%;
+	color: #343148FF;
+}
+
+.logo{
 	padding-top:7px; 
 }
 .navlinks{
@@ -93,8 +104,8 @@ h2{
 }
 
 .profile{
-
-	background-color: #f0ebf4;
+	color: #343148FF;
+	background-color: #DFDCE5FF;#F1F4FFFF;
 	height: 70vh;
 	width:95%;
 	position: relative;
@@ -124,10 +135,11 @@ h2{
 }
 
 .about,.projects,.contact{
+	color: #343148FF;
 	box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	height: auto;
 	width: 95%;
-	background-color: #f0ebf4;
+	background-color: #DFDCE5FF;#F1F4FFFF;
 	z-index: -1;
 	border-radius: 20px;
 	float: left;
@@ -148,7 +160,7 @@ h2{
 
 	justify-content: center;
 	padding-top:5vh; 
-	height: 80vh;
+	height: 90vh;
 	width:100%;
 	margin:0px;
 	margin-top:5%;
@@ -196,23 +208,23 @@ label{
 
 .small_icon{
 	font-size: 2em;
-	color: #000000;
+	color: #343148FF;
 }
 
 .techused{
 	font-size: 2em;
 }
 
-.techic{
+.soc_ic{
     text-decoration: none;
     font-size: 3vw;
     margin: 0.5em;
-    color:#000000;
+    color: #343148FF;
     transition: color 0.4s;
 }
-.techic:hover{
+.soc_ic:hover{
 	text-decoration: none;
-    color:#C0C0C0; 
+    color:#9F6B99FF; 
 }
 
 
@@ -222,7 +234,7 @@ label{
 	float:left;
 	position: relative;
 	left:18%;
-	top:2.8vh;
+	top:4vh;
 	width: 35%;
 	margin:0px;
 	padding-bottom: 4vh;
@@ -234,7 +246,7 @@ label{
 
 
 hr{
-	width: 45vw;
+	width: 50vw;
 	border-width: 5px;
 	border-radius: 30%;
 	margin: auto;
@@ -294,6 +306,8 @@ hr{
 
 
 	.navlinks{
+		
+		color: #343148FF;
 		position: absolute;
 		right:0px;
 		height:85vh;
@@ -312,6 +326,11 @@ hr{
 		position: relative;
 		opacity:0;
 
+	}
+	.navlinks li :hover{
+		
+		text-decoration: none;
+		color: #9F6B99FF;
 	}
 	.burger{
 		display: block;
@@ -401,7 +420,7 @@ hr{
 		width: 50%;
 
 	}
-	.soc{
+	.soc_ic{
 		font-size: 1.2em;
 	}
 	.contact{
