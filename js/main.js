@@ -63,13 +63,13 @@ $('.carousel').on('slid.bs.carousel', function () {
 
 $(document).ready(function(){
 
-  $(".navitems").on('click', function(event) {
+  $("#t_logo,.navitems").on('click', function(event) {
     if (this.hash !== "") {
 
       event.preventDefault();
       var hash = this.hash;
       $('html, body').animate({
-        scrollTop: $(hash).offset().top
+        scrollTop: $(hash).offset().top-150
       }, 700, function(){
         window.location.hash = hash;
       });
@@ -79,13 +79,57 @@ $(document).ready(function(){
 
 
 
-
-
+/* active menu item on click */
+$(document).ready(function() {
     
-    //alert('here');
-	
+    'use strict';
+    
+    
+    $('.navlinks li a').click(function(){
+        
+        'use strict';
+        
+        //$('.navlinks li a').parent().removeClass("current");
+        
+        $(this).parent().addClass("current");
+    
+    });
+});
 
-
+// highlight menu item on scroll
+$(document).ready(function() {
+    
+    'use strict';
+    
+    $(window).scroll( function() {
+        
+        'use strict';
+        
+        $("div").each(function()  {
+            
+            'use strict';
+            
+            var bb = $(this).attr("id");  // ABOUT, CONTACT, DOWNLOAD
+            var hei = $(this).outerHeight();
+            var grttop = $(this).offset().top - 250;
+            
+            if ($(window).scrollTop() > grttop && $(window).scrollTop() < grttop + hei) {
+             
+                $(".navlinks li a[href='#" + bb + "']").parent().addClass("current");
+           
+            } else {
+                $(".navlinks li a[href='#" + bb + "']").parent().removeClass("current");
+                
+            }
+            
+            
+        });
+    
+    
+    });
+    
+    
+});
 
 
 

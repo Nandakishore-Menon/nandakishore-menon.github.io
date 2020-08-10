@@ -11,6 +11,9 @@ body{
 	overflow: visible;
 
 }
+input{
+	color: #343148FF;
+}
 
 nav{
 	display: flex;
@@ -37,6 +40,35 @@ button{
 	z-index: -2;
 }
 
+hr.current-bar{
+	opacity: 0;
+	width:60px;
+	background-color: #9F6B99FF;
+	border-width: 3px;
+	border-radius: 30%;
+	align-self: center;
+	
+}
+
+@keyframes fade-in{
+	from{
+		opacity:0;
+	}
+	to{
+		opacity:1;
+	}
+}
+
+
+.current hr.current-bar{
+	opacity: 1;
+	animation:fade-in 0.4s ease-in;
+}
+
+/*.navlinks .current {
+  border-bottom: 4px solid #F38A8A;
+}
+*/
 
 .navlinks a{
 	color: #343148FF;
@@ -165,14 +197,16 @@ h2{
 	clear: left;
 	margin-bottom: 25px;	
 	background-color: #DFDCE5FF;
-	margin:10px;
-	padding: 10px;
+	margin:5px;
+	padding: 5px;
 	z-index: -2;
+	border-radius: 0px 25px 25px;
 
 }
 
 .about{
-	background-color: #4F3466FF;
+	background-color: #9F6B99FF;#4F3466FF;
+	padding: 1px;
 }
 
 
@@ -188,7 +222,7 @@ h2{
 	float: left;
 	width: 100px;
 	padding: 0;
-	margin-left: 10px;
+	margin-left: 5px;
 	text-align: center;
 	z-index: 2;
 }
@@ -196,30 +230,43 @@ h2{
 .tabs a {
 	display: block;
 	text-decoration: none;
-	color: #000000;
+	color: #ffffff;
     font-weight: bold;
-	padding:  8px;
+	padding:  12px;
 	margin-right: 4px; 
    border-top-right-radius: 15px;
    border-top-left-radius: 15px;
-	background-color:#DFDCE5FF;
-    margin-bottom: -2px; 
+	background-color:#343148FF;
+    margin-bottom: -0.5px; 
     z-index: 1;
+    opacity: 0.6;
+    /*animation: fade 1s ease-in;*/
 }
 
 
 .tabs a.active {
-	border-bottom: 2px solid white;
-	background-color: #fff;
+	background-color: #DFDCE5FF;
 	color: #000;
     font-weight: bold;
+    opacity: 1;
+    animation: fade 0.7s ease-in;
+}
+
+@keyframes fade{
+	from{
+		opacity:0.6;
+	}
+	to{
+		opacity:1;
+	}
+
 }
 
 .techic{
 	font-size: 4em;
 }
 .soc{
-	font-size: 1em;
+	font-size: 1.5em;
 }
 
 
@@ -296,7 +343,10 @@ label{
     color:#9F6B99FF; 
 }
 
-
+.techic:hover{
+	text-decoration: none;
+    color:#9F6B99FF; 
+}
 
 
 .projinfo{
@@ -354,6 +404,7 @@ hr{
 .tech .techic{
 	font-size: 3.5em;
 	padding: 10px;
+	transition: color 0.4s;
 }
 
 
@@ -535,12 +586,13 @@ hr{
 
 	.tech h4{
 		font-size: 20px;
-		padding: 15px;
+		padding-top: 15px;
+		margin:0px;
 	}
 
 	.tech .techic{
-		padding:10px;
-		font-size: 1.6em;
+		padding:0px 5px 5px 5px;
+		font-size: 1.4em;
 	}
 
 
