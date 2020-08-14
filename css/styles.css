@@ -40,6 +40,12 @@ button{
 	z-index: -2;
 }
 
+button:active{
+	background-color: #F0F6F7FF;
+	color: #9F6B99FF;
+	animation: fade-in 0.3s linear;
+}
+
 hr.current-bar{
 	opacity: 0;
 	width:60px;
@@ -95,7 +101,7 @@ hr.current-bar{
 
 h1.title{
 	color: #343148FF;
-	
+	opacity: 1;
 	margin: 5vh 0px 0px 0px;
 	display: flex;
 	justify-content: center;
@@ -168,7 +174,7 @@ h2{
 }
 .status.title{
 	margin: 8vh; 
-
+	opacity: 1;
 	font-size: 26px;
 }
 
@@ -399,6 +405,7 @@ hr{
 	font-size: 33px;
 	padding: 10px ;
 	margin-bottom: 10px;
+	opacity: 1;
 }
 
 .tech .techic{
@@ -406,7 +413,19 @@ hr{
 	padding: 10px;
 	transition: color 0.4s;
 }
+.skname{
+	padding: 15px;
+	width: 40%;
+	margin:auto;
+	font-size: 1em;
+	border-radius: 10px;
+	background-color: #DFDCE5FF;
+	animation: fade-in 0.6s ease-in;
+}
 
+.title{
+	/*animation: fade-in 0.6s ease-in;*/
+}
 
 #profpic{
 	border-radius: 50%;
@@ -446,6 +465,10 @@ hr{
 	position: relative;
 	left: 100%;
 }
+
+
+
+
 
 @media screen and (max-width: 768px){
 
@@ -496,6 +519,8 @@ hr{
 		font-size: 4vw;
 	}
 	.title{
+		opacity: 1;
+		animation: fade-in 1s ease-in;
 		font-size: 30px;
 	}
 	.status{
@@ -585,16 +610,16 @@ hr{
 	}
 
 	.tech h4{
-		font-size: 20px;
+		font-size: 18px;
 		padding-top: 15px;
-		margin:0px;
+		margin:auto;
 	}
 
 	.tech .techic{
 		padding:0px 5px 5px 5px;
 		font-size: 1.4em;
 	}
-
+	
 
 
 }
