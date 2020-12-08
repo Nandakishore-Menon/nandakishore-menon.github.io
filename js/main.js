@@ -132,21 +132,21 @@ $(document).ready(function() {
 });
 
 
-$('i.techic').on('mouseover',(event)=>{
-  var icon=$(event.target);
-  //console.log(icon);
-  //console.log(icon.siblings('h4.title').text());
-  icon.siblings('h4').text(icon.attr("id"));
-  icon.siblings('h4').removeClass('title');
-  icon.siblings('h4').addClass("skname");
-});
+// $('i.techic').on('mouseover',(event)=>{
+//   var icon=$(event.target);
+//   //console.log(icon);
+//   //console.log(icon.siblings('h4.title').text());
+//   icon.siblings('h4').text(icon.attr("id"));
+//   icon.siblings('h4').removeClass('title');
+//   icon.siblings('h4').addClass("skname");
+// });
 
-$('i.techic').on('mouseout',(event)=>{
-  var heading=$(event.target).siblings('h4');
-  heading.text(heading.attr("id"));
-  heading.removeClass("skname");
-  heading.addClass('title');
-});
+// $('i.techic').on('mouseout',(event)=>{
+//   var heading=$(event.target).siblings('h4');
+//   heading.text(heading.attr("id"));
+//   heading.removeClass("skname");
+//   heading.addClass('title');
+// });
 
 
 
