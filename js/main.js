@@ -27,8 +27,9 @@ const slide=()=>{
 	burger.addEventListener('click',func);
 
 	navlinks.forEach((link,index)=>{
-			link.addEventListener('click',()=>{
-				// $('.navlinks').toggleClass('nav-active');
+			link.addEventListener('click',(event)=>{
+        // $('.navlinks').toggleClass('nav-active');
+        event.preventDefault();
 				func();
 			});
 		});
@@ -71,7 +72,7 @@ $(document).ready(function(){
       $('html, body').animate({
         scrollTop: $(hash).offset().top-150
       }, 700, function(){
-        window.location.hash = hash;
+        window.location.hash = "";
       });
     } 
   });
