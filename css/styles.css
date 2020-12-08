@@ -12,7 +12,7 @@ body{
 	overflow: visible;
 }
 input{
-	color: #F0F6F7FF;
+	color: #333333;
 	width: 50%;
 }
 
@@ -396,7 +396,6 @@ label{
 }
 .projinfo h1{
 	font-size: 1.8em;
-
 }
 
 hr{
@@ -439,7 +438,10 @@ hr{
 	margin-bottom: 20px;
 	opacity: 1;
 }
-
+i{
+	display: inline-block;
+	padding: 5px;
+}
 .tech .techic{
 	font-size: 2.0em;
 	/* background-color: #000000; */
@@ -558,7 +560,7 @@ hr{
 	}
 
 	.about{
-		height:400px;
+		height:auto;
 	}
 
 
@@ -566,12 +568,17 @@ hr{
 	.title{
 		opacity: 1;
 		animation: fade-in 1s ease-in;
+		margin: 0px;
+		padding: 0px;
 	}
 	h1.title,h1.title.project{
-		font-size: 5vw;
+		font-size: 7vw;
+		margin-top:4vh;
+		margin-bottom: 2vh;
+		font-weight: 700;
 	}
 	.projects{
-		height:80%;
+		height:500px;
 		
 	}
 	.projinfo{
@@ -586,7 +593,7 @@ hr{
 
 	}
 	.projinfo p{
-		font-size: 15px;
+		font-size: 13px;
 	}
 	h1.project{
 
@@ -617,7 +624,8 @@ hr{
 		/* left: 36vw; */
 		float: none;
 		top:0px;
-		margin:0 25%;
+		left:0px;
+		margin:0 auto;
 		padding: 0;
 	}
 
@@ -671,19 +679,22 @@ hr{
 		/* overflow: hidden; */
 	}
 	.tech{
-		width: 25%;
-		margin: 0px;
+		width: 45%;
+		margin: 0px 1.75%;
 		padding: 0px;
-		height:80%;
-		font-size: 15px;
+		height:50%;
+		font-size: 1em;
+	}
+	.panelContainer{
+		height: 500px;
 	}
 	.tech h4{
-		font-size: 20px;
+		font-size: 15px;
 		padding-top: 15px;
 		margin:auto;
 	}
 
-	.tech .techic{
+	.techic{
 		/* padding:10px 5px 10px 5px; */
 		/* padding: 30vh 0px 30vh 0px; */
 		display: inline-block;
