@@ -13,9 +13,12 @@ body{
 }
 input{
 	color: #333333;
-	width: 50%;
+	width: 60%;
 }
-
+textarea{
+	color: #333333;
+	width: 60%;
+}
 nav{
 	display: flex;
 	position: fixed;
@@ -100,19 +103,12 @@ li{
 	
 }
 
-h1.title{
-	color: #F0F6F7FF;
-	opacity: 1;
-	margin: 6.2vh 0px 5vh 6.2vw;
-	font-size: 40px;
-	font-weight: 700;
-}
 h1.project{
 
 	color: #F0F6F7FF;
 	opacity: 1;
 	margin: 4vh 0px 10vh 0vw;
-	font-size: 40px;
+	font-size:2.2em;
 	font-weight: 700;
 }
 
@@ -133,7 +129,10 @@ h2{
 	margin-top: 6%;
 	color: #F0F6F7FF;
 }
-
+.projinfo h1{
+	font-size: 1.7em;
+	font-weight: 700;
+}
 .logo{
 	padding-top:7px; 
 }
@@ -162,11 +161,11 @@ h2{
 	min-height: 400px;
 	height: 68%;
 	width:99%;
-	position: relative;
-	top:18%;
+	/* position: relative;
+	top:18%; */
 	z-index: -2;
 	border-radius: 20px;
-	margin: 0px 0.5% 0px 0.5%;
+	margin: 20vh 0.5% 0px 0.5%;
 /*	float: left;
 	clear: both;*/
 	min-height: 500px;
@@ -190,18 +189,17 @@ h2{
 .about,.projects,.contact{
 	color: #F0F6F7FF;
 	box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	min-height: 400px;
-	height:68%;
+	min-height: 500px;
+	height:70%;
 	width: 99%;
 	background-color:#333333;
 	z-index: 2;
 	border-radius: 20px;
-/*	float: left;
-	clear: both;*/
-	position: relative;
-	top:25%;
+ 	float: left;
+	clear: both;
+	/* position: relative;
+	top:25%; */
 	margin: 2% 0.5% 0px 0.5%; 
-
 
 }
 
@@ -287,6 +285,7 @@ h2{
 	/* height: auto; */
 	height: 70%;
 	margin-bottom: 3%;
+	
 }
 
 .contact{
@@ -388,14 +387,11 @@ label{
 	float:left;
 	position: relative;
 	left:18%;
-	bottom:5%;
+	top:4%;
 	width: 35%;
 	margin:0px;
 	padding-bottom: 4vh;
 	
-}
-.projinfo h1{
-	font-size: 1.8em;
 }
 
 hr{
@@ -488,12 +484,12 @@ i{
 #carouselExampleControls{
 	
 	margin-right: 0px;
-	height:50vh;
-	width: 50vh;
+	height:25vw;
+	width: 25vw;
 	float: left;
 	position: relative;
-	left: 12%;
-	bottom: 5%;
+	left: 8%;
+	/* top: 4%; */
 	/* left: 13%; */
 	/* top:8%; */
 }
@@ -504,7 +500,9 @@ i{
 	left: 100%;
 }
 
-
+div.carousel-item{
+	margin-top: -5%;
+}
 
 
 
@@ -553,10 +551,10 @@ i{
 
 
 	.bio h1{
-		font-size: 8vw;
+		font-size: 6vw;
 	}
 	.bio h4{
-		font-size: 4vw;
+		font-size: 3vw;
 	}
 
 	.about{
@@ -572,13 +570,13 @@ i{
 		padding: 0px;
 	}
 	h1.title,h1.title.project{
-		font-size: 7vw;
+		font-size: 10vmin;
 		margin-top:4vh;
 		margin-bottom: 2vh;
 		font-weight: 700;
 	}
 	.projects{
-		height:500px;
+		height:600px;
 		
 	}
 	.projinfo{
@@ -588,12 +586,8 @@ i{
 		top:0px;
 		left:0px;
 	}
-	.projinfo h1{
-		font-size: 28px;
-
-	}
 	.projinfo p{
-		font-size: 13px;
+		font-size: 1em;
 	}
 	h1.project{
 
@@ -618,8 +612,8 @@ i{
 		font-size: 15px;
 	}
 	#carouselExampleControls{
-		width:180px;
-		height:180px;
+		width:30vh;
+		height:30vh;
 		top:3vh;
 		/* left: 36vw; */
 		float: none;
@@ -703,7 +697,7 @@ i{
 	}
 	
 	.techused{
-		font-size: 1em;
+		font-size: 1.5em;
 	}
 	.techused h3{
 		font-size: 20px;
