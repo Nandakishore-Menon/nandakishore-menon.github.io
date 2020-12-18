@@ -283,7 +283,7 @@ img{
   transition: 1s;
   cursor: pointer;
 }
-.work__img img:hover{
+.content:hover .work__img img{
   transform: scale(1.1);
 }
 .contact__input{
@@ -436,7 +436,7 @@ textarea{
 }
 
 .content:hover .content-overlay{
-  opacity: 1;
+  opacity: 0.9;
 }
 .content-details {
   position: absolute;
@@ -461,7 +461,6 @@ textarea{
   left: 50%;
   opacity: 1;
 }
-
 .content-details h3{
   color: #fff;
   font-weight: 500;
