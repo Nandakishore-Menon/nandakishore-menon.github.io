@@ -52,7 +52,7 @@ button:active{
 
 hr.current-bar{
 	opacity: 0;
-	width:60px;
+	width:50px;
 	background-color: #B8B8B8;
 	border-width: 3px;
 	border-radius: 10%;
@@ -86,7 +86,7 @@ hr.current-bar{
 	text-decoration: none;
 	letter-spacing: 3px;
 	font-weight: bold;
-	font-size: 1.3em;
+	font-size: 0.9em;
 	font-weight: 700;
 	transition: color 0.25s ease-in;
 

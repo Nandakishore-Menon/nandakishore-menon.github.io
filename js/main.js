@@ -69,10 +69,10 @@ $(document).ready(function(){
 
       event.preventDefault();
       var hash = this.hash;
-      $('html, body').animate({
+      $('body,html').animate({
         scrollTop: $(hash).offset().top-150
       }, 700, function(){
-        window.location.hash = "";
+        this.hash = ""
       });
     } 
   });
