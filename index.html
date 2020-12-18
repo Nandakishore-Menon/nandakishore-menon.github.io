@@ -1,230 +1,268 @@
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./css/bootstrap.min.css">
-        <link rel="stylesheet" href="./css/styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <!-- <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'> -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
-        <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap" rel="stylesheet">
-        <title>Nandakishore S Menon</title>
+        <title>Nandakishore</title>
     </head>
-
     <body>
-        <nav>
-            <div class="logo">
-                <a id="t_logo" href="#home"><h4>Nandakishore</h4></a>
-                <!-- <img id="mainlogo" src="/images/logo2.png"> -->
-            </div>
-            
-            <ul id="mainNav"class="navlinks">
-                <li class="current"><a class="navitems" href="#home">Home<br><hr class="current-bar"></a></li>
-                <li><a class="navitems" href="#about">About<br><hr class="current-bar"></a></li>
-                <li><a class="navitems" href="#proj">Projects<br><hr class="current-bar"></a></li>
-                <li><a class="navitems" href="#form_div">Contacts<br><hr class="current-bar"></a></li>
-                
-            </ul>
-            
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-
-
-
-
-        </nav>
-        <!-- <span id="home"></span> -->
-<!-- --------------Content------------------------------------->
-        <div id="home" class="profile">
-            <img id="profpic"src="./images/me.jpeg">
-            <div class="bio text-center"><h1>Nandakishore S Menon</h1><br>
-                <h4>Computer Science Sophomore @ IIIT Bangalore</h4>
-            </div>
-            <!-- <span id="about"></span> -->
-        </div>
-
-<!-- --------------ABOUT------------------------------------->
-    
-     <div id="about" class="about">  <!-- begins the tabbed panels / wrapper-->
- 
-     <ul class="tabs">
-      <li><a href="#panel1">ABOUT</a></li>
-      <li><a href="#panel2">SKILLS</a></li>
-     </ul>
-
-    <div class="panelContainer">
-        <div id="panel1" class="panel">
-            <h1 class="title">About Me</h1>
-            <ul id="interests">
-                <li>I am passionate about problem solving in general, be it a development challenge or competitive programming questions.</li>
-                <li>I enjoy CTFs and Hackathons.</li>
-                <li>I look forward to contributing to Open Source projects.</li>
-                <li class="status">I am seeking internship opportunities.</li>
-            </ul>
-            <!-- <div id="proj"></div> -->
-            
-        </div>  <!-- end panel 1 -->
-
-
-        <div id="panel2" class="panel">
-
-            <div class="tech_group">
-                    <h1 class="title text-center">Skills</h1>
-                    <div class="tech text-center">
-                        <h4 class="title" id="Languages" >Languages</h4>
-                        <i id="C" class="devicon-c-plain-wordmark techic"></i>
-                        <i id="C++" class="devicon-cplusplus-plain-wordmark techic"></i>
-                        <i id="Python" class="devicon-python-plain techic"></i>
-                        <i id="Java" class="devicon-java-plain techic"></i>
-                    </div>
-                    <div class="tech text-center">
-                        <h4 class="title text-center" id="Web" >Web</h4>
-                        <i id="HTMl 5" class="devicon-html5-plain techic"></i>
-                        <i id="CSS 3" class="devicon-css3-plain techic"></i>
-                        <i id="JavaScript" class="devicon-javascript-plain techic"></i>
-                        <i id="Node.js" class="devicon-nodejs-plain techic"></i>
-                        <i id="Express.js" class="devicon-express-original techic"></i>
-                        <i id="React.js" class="devicon-react-original techic"></i>
-                    </div>
-                    <div class="tech text-center">
-                        <h4 id="Database" class="title">Database</h1>
-                        <i id="MongoDB" class="devicon-mongodb-plain techic"></i>
-                    </div>
-                    <div class="tech text-center">
-                        <h4 id="Version Control" class="title">Version Control</h1>
-                        <i id="Git" class="devicon-git-plain techic"></i>
-                    </div>
-            </div>  
-        </div> <!-- end panel 2 -->
-
-        </div> <!-- end div class="panelContainer" or panel wrapper -->
-
-    </div> <!-- ends the tabbed panels / wrapper-->
-
-
-
-
-<!-- --------------Project Carousel------------------------------------->
-
-<div id ="proj" class="projects text-center">
-
-    <h1 class="title project">Projects</h1>
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-          
-            <div class="carousel-item">
-              <a href="https://github.com/Nandakishore-Menon/Student_Database_Management" target="_blank">
-              <div  class="car-img d-block w-100">
-                <img src="images/stu.png" alt="First slide">
-              </div></a>
-              <div class="d-none carousel-caption">
-                <h1>Student Database Management System</h1>
-                <p>Uses a REST API to take user info and stores in database, which can later be viewed, searched, updated and deleted.</p>
-                <div class="techused"><h3>Technologies used:</h3>
-                    <i class="devicon-mongodb-plain techu"></i>
-                    <i class="devicon-nodejs-plain techu"></i>
-                    <i class="devicon-express-original techu"></i>
-                    <i class="devicon-javascript-plain techu"></i>
-                </div>
-              </div>
-              
-            </div>
-            
-            <div class="carousel-item  active">
-            <a href="https://github.com/Nandakishore-Menon/Socket_quiz_python" target="_blank">
-                <div  class="car-img d-block active w-100">
-                    <img src="images/quiz.png" alt="First slide">
-                </div></a>
-                <div class="d-none carousel-caption">
-                    <h1>Socket Programming Quiz</h1>
-                    <p>A multiplayer trivia game.Answer within 10 seconds, or the question is skipped.Implemented in python.</p>
-                    <div class="techused"><h3>Technologies used:</h3>
-                        <i class="devicon-python-plain techu"></i>
-                    </div>
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Nandakishore</a>
                 </div>
 
-            </div>
-            
-            <div class="carousel-item">
-                <a href="https://github.com/Nandakishore-Menon/Sliding_puzzle" target="_blank">
-                    <div  class="car-img d-block active w-100">
-                        <img src="images/slide.png" alt="First slide">
-                    </div></a>
-                    <div class="d-none carousel-caption">
-                        <h1>Sliding puzzle</h1>
-                        <p>Solves the sliding puzzle in minimum moves and also allows user to play.Implemented in python.</p>
-                        <div class="techused"><h3>Technologies used:</h3>
-                            <i class="devicon-python-plain techu"></i>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">I'm <span class="home__title-color">Nandakishore</span></h1><h1 class="home__subtitle">CSE Sophomore@IIITB</h1>
+                    <a href="/assets/files/Resume.pdf" target="_blank" class="button">Resume</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/nandakishore-s-menon/" target="_blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/Nandakishore-Menon" target="_blank" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">    
+                    <img src="assets/img/perfil.png" alt="">
+                </div>
+            </section>
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/about.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I am Nandakishore</h2>
+                        <p class="about__text">
+                            I am a tech enthusiast and like to explore interesting technologies in the market: both hardware and software. I am passionate about software solutions that will prove useful to people and I look forward to contributing to open-source projects. I love problem-solving, and enjoy tackling a good challenge. I have experience in web development and have worked on some interesting web applications.
+                        </p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <br>
+                        <h2 class="skills__subtitle">Technical Skills</h2>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML5</span>
+                            </div>
+                            
+                            <div class="skills__names">
+                                <span class="skills__name">React &nbsp;</span>
+                                <i class='bx bxl-react skills__icon'></i>
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS3</span>
+                            </div>
+                            
+                            <div class="skills__names">
+                                <span class="skills__name">Express &nbsp;</span>
+                                <i class='devicon-express-original skills__icon'></i>
+                                
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            
+                            <div class="skills__names">
+                                <span class="skills__name">Node.js &nbsp;</span>
+                                <i class='bx devicon-nodejs-plain skills__icon'></i>
+                                
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">UX/UI</span>
+                            </div>
+                            
+                            <div class="skills__names">
+                                <span class="skills__name">MongoDB &nbsp;</span>
+                                <i class='bx devicon-mongodb-plain skills__icon'></i>
+                                
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx devicon-c-plain-wordmark skills__icon'></i>
+                                <span class="skills__name">C</span>
+                            </div>
+                            
+                            <div class="skills__names">
+                                <span class="skills__name">C++ &nbsp;</span>
+                                <i class='bx devicon-cplusplus-plain-wordmark skills__icon'></i>
+                                
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx devicon-python-plain skills__icon'></i>
+                                <span class="skills__name">Python</span>
+                            </div>
+                            
+                            <div class="skills__names">
+                                <span class="skills__name">Java &nbsp;</span>
+                                <i class='bx devicon-java-plain skills__icon'></i>
+                                
+                            </div>
                         </div>
                     </div>
-                
+                    
+                    <div>              
+                        <img src="assets/img/skill.jpg" alt="" class="skills__img">
+                    </div>
                 </div>
-                
-              </div>
-              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="small_icon"><i class="fa fa-chevron-circle-left"></i>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="small_icon"><i class="fa fa-chevron-circle-right"></i></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-            <div class="projinfo text-center">            
-                <h1>Socket Programming Quiz</h1>
-                <p>A multiplayer trivia game.Answer within 10 seconds, or the question is skipped.Implemented in python.</p>
-                <div class="techused"><h3>Technologies used:</h3>
-                    <i class="devicon-python-plain techu"></i>
+            </section>
+
+
+            <section class="work section" id="work">
+                <h2 class="section-title">Work</h2>
+
+                <div class="work__container bd-grid">
+                    <div class="content">
+                        <a href="https://github.com/Nandakishore-Menon/Socket_quiz_python" target="_blank">
+                            <div class="content-overlay"></div>
+                            <div class="work__img">
+                                <img src="assets/img/work1.jpg" alt="">
+                            </div>
+                            <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">Socket Programming Quiz</h3>
+                                <p class="content-text">A multiplayer trivia game.Answer within 10 seconds, or the question is skipped.<br>Implemented in python.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="content">
+                        <a href="https://github.com/Nandakishore-Menon/Sliding_puzzle" target="_blank">
+                            <div class="content-overlay"></div>
+                            <div class="work__img">
+                                <img src="assets/img/work2.jpg" alt="">
+                            </div>
+                            <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">Sliding Puzzle</h3>
+                                <p class="content-text">Solves the sliding puzzle in minimum moves and also allows user to play.<br>Implemented in python.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="content">
+                        <a href="https://github.com/Nandakishore-Menon/MERN-Messenger" target="_blank">
+                            <div class="content-overlay"></div>
+                            <div class="work__img">
+                                <img src="assets/img/work3.jpg" alt="">
+                            </div>
+                            <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">MERN Messenger</h3>
+                                <p class="content-text">A MERN stack chat room application with google authentication using Firebase. Allows creating and sending messages and Twemojis (Twitter emojis) in multiple chat rooms and search for different chat rooms.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="content">
+                        <a href="https://github.com/Nandakishore-Menon/Student_Database_Management" target="_blank">
+                            <div class="content-overlay"></div>
+                            <div class="work__img">
+                                <img src="assets/img/work4.jpg" alt="">
+                            </div>
+                            <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">Student Database Management System</h3>
+                                <p class="content-text">Uses a REST API to take user info and stores in database, which can later be viewed, searched, updated and deleted.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="content">
+                        <a href="https://github.com/Nandakishore-Menon/Transport-System-Model" target="_blank">
+                            <div class="content-overlay"></div>
+                            <div class="work__img">
+                                <img src="assets/img/work5.jpg" alt="">
+                            </div>
+                            <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">Transport System Model</h3>
+                                <p class="content-text">A java program simulating movement of trucks through hubs and highways with finite capacity to reach from source to destination. Implements OOPs principles</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="content">
+                        <a href="https://github.com/Nandakishore-Menon/Hospital-Management-System" target="_blank">
+                            <div class="content-overlay"></div>
+                            <div class="work__img">
+                                <img src="assets/img/work6.jpg" alt="">
+                            </div>
+                            <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">Hospital Management System</h3>
+                                <p class="content-text">A hospital management system written in C. Tracks patient records, checkout logs and payments along with basic CRUD operations.</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-            </div>
-    
-
-    </div>
+            </section>
 
 
-<!-- --------------Contact Me------------------------------------->
-        <div class='contact text-center'>
-            <h2>Send Me Your Message Here :</h2><br><br>
-            <div id="cont_info" class="text-center">
-                <div class="social text-center">
-                    <a class="soc_ic" href="https://www.linkedin.com/in/nandakishore-s-menon/" target="_blank"><i class="fa fa-linkedin-square soc"></i></a>
-                    <a class="soc_ic" href="https://github.com/Nandakishore-Menon" target="_blank"><i class="fa fa-github-square soc"></i></a>
-                    <a class="soc_ic" href="https://www.facebook.com/profile.php?id=100008917634344" target="_blank"><i class="fa fa-facebook-square soc"></i></a>
-                    <a class="soc_ic" href="https://twitter.com/Nandakishore_SM"  target="_blank"><i class="fa fa-twitter-square soc"></i></a>
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form class="contact__form" action="https://formspree.io/f/xpzyorad" target="_blank" method="POST">
+                        <input type="text" name="name" placeholder="Name" class="contact__input">
+                        <input type="mail" name="_replyto" placeholder="Email" class="contact__input">
+                        <textarea name="message" placeholder="Your Message" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="submit" value="Submit" class="contact__button button">
+                    </form>
                 </div>
-                
-                <span><br>OR mail me at<br></span>
-                <h3 id="mail">Nandakishore.Menon@iiitb.org</h3>
+            </section>
+        </main>
+
+
+        <footer class="footer">
+            <p>Mail me at</p>
+            <p class="footer__title">Nandakishore.Menon@iiitb.org</p>
+            <p>OR<br>Contact me through</p>
+            <div class="footer__social">
+                <a href="https://www.facebook.com/Nandakishore.S.Menon" target="_blank" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://www.instagram.com/nandakishore.menon/" target="_blank" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://twitter.com/Nandakishore_SM"  target="_blank" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
             </div>
+            
+        </footer>
 
-
-            <div id="form_div" class="text-center">
-                <form id="cont_form" target="_blank"action="https://formspree.io/xpzyorad" method="POST">
-                    <label>
-                        Your email:<br><input type="email" name="_replyto">
-                    </label>
-                    <label>
-                        Your message:<br><textarea name="message" message></textarea>
-                    </label>
-
-                      <!-- your other form fields go here -->
-                    <br>
-                    <button id="sub" type="submit">Send</button>
-                </form>
-            </div>
-
-        </div>
-
-
-
-
-        <script src="./js/jquery-3.5.1.min.js"></script>
-        <script src="./js/bootstrap.min.js"></script>
-        <script src="./js/main.js"></script>
+        <script src="assets/js/jquery-3.5.1.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
